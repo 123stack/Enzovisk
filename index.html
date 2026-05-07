@@ -152,6 +152,170 @@
         font-size: 18px;
       }
     }
+    section{
+  padding:80px 40px;
+}
+
+/* SELEÇÕES */
+
+.teams{
+  background:#f5f5f5;
+  text-align:center;
+}
+
+.teams h2{
+  font-size:42px;
+  color:#006847;
+  margin-bottom:50px;
+}
+
+.cards{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:white;
+  width:320px;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.card h3{
+  margin-top:20px;
+  color:#009c3b;
+  font-size:28px;
+}
+
+.card p{
+  padding:20px;
+  color:#444;
+}
+
+/* GALERIA */
+
+.gallery{
+  background:#006847;
+  text-align:center;
+}
+
+.gallery h2{
+  color:white;
+  font-size:42px;
+  margin-bottom:40px;
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:20px;
+}
+
+.gallery-grid img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.gallery-grid img:hover{
+  transform:scale(1.05);
+}
+
+/* ESTÁDIOS */
+
+.stadiums{
+  background:#f5f5f5;
+  text-align:center;
+}
+
+.stadiums h2{
+  color:#006847;
+  font-size:42px;
+  margin-bottom:50px;
+}
+
+.stadium-container{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.stadium-card{
+  width:400px;
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stadium-card img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+}
+
+.stadium-card h3{
+  margin:20px 0 10px;
+  color:#009c3b;
+}
+
+.stadium-card p{
+  padding:0 20px 30px;
+}
+
+/* TORCIDA */
+
+.fans{
+  background:linear-gradient(135deg,#009c3b,#006847);
+  text-align:center;
+  color:white;
+}
+
+.fans h2{
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+.fans p{
+  max-width:800px;
+  margin:auto;
+  font-size:20px;
+  line-height:1.8;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+  section{
+    padding:60px 20px;
+  }
+
+  .teams h2,
+  .gallery h2,
+  .stadiums h2,
+  .fans h2{
+    font-size:32px;
+  }
+
+}
   </style>
 </head>
 
@@ -206,6 +370,124 @@
         </p>
       </div>
 
+    </section>
+    <section class="hero">
+      <h1>⚽ Copa do Mundo ⚽</h1>
+    
+      <p>
+        Viva a emoção do maior campeonato de futebol do planeta.
+        Acompanhe jogos, seleções, estatísticas e muito mais!
+      </p>
+    
+      <button class="btn">Ver Tabela</button>
+    </section>
+    
+    <!-- SEÇÃO SELEÇÕES -->
+    <section class="teams">
+    
+      <h2>🌍 Seleções em Destaque</h2>
+    
+      <div class="cards">
+    
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200&auto=format&fit=crop" alt="Brasil">
+    
+          <h3>🇧🇷 Brasil</h3>
+    
+          <p>
+            Pentacampeão mundial e conhecido pelo futebol arte.
+          </p>
+        </div>
+    
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=1200&auto=format&fit=crop" alt="Argentina">
+    
+          <h3>🇦🇷 Argentina</h3>
+    
+          <p>
+            Atual campeã mundial com uma torcida apaixonada.
+          </p>
+        </div>
+    
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1200&auto=format&fit=crop" alt="França">
+    
+          <h3>🇫🇷 França</h3>
+    
+          <p>
+            Uma das seleções mais fortes do futebol moderno.
+          </p>
+        </div>
+    
+      </div>
+    
+    </section>
+    
+    <!-- GALERIA -->
+    <section class="gallery">
+    
+      <h2>📸 Galeria da Copa</h2>
+    
+      <div class="gallery-grid">
+    
+        <img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?q=80&w=1200&auto=format&fit=crop" alt="">
+        
+        <img src="https://images.unsplash.com/photo-1518604666860-9ed391f76460?q=80&w=1200&auto=format&fit=crop" alt="">
+        
+        <img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?q=80&w=1200&auto=format&fit=crop" 
+        alt="Estádio de futebol">
+        
+        <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=1200&auto=format&fit=crop" alt="">
+        
+        <img src="https://images.unsplash.com/photo-1486286701208-1d58e9338013?q=80&w=1200&auto=format&fit=crop" alt="">
+        
+        <img src="https://images.unsplash.com/photo-1570498839593-e565b39455fc?q=80&w=1200&auto=format&fit=crop" alt="">
+    
+      </div>
+    
+    </section>
+    
+    <!-- ESTÁDIOS -->
+    <section class="stadiums">
+    
+      <h2>🏟️ Estádios Icônicos</h2>
+    
+      <div class="stadium-container">
+    
+        <div class="stadium-card">
+          <img src="https://images.unsplash.com/photo-1570498839593-e565b39455fc?q=80&w=1200&auto=format&fit=crop"  alt="Lusail Stadium">
+    
+          <h3>Maracanã</h3>
+    
+          <p>
+            Um dos estádios mais famosos da história do futebol.
+          </p>
+        </div>
+    
+        <div class="stadium-card">
+          <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1200&auto=format&fit=crop" alt="">
+    
+          <h3>Lusail Stadium</h3>
+    
+          <p>
+            Palco da final da Copa do Mundo de 2022.
+          </p>
+        </div>
+    
+      </div>
+    
+    </section>
+    
+    <!-- TORCIDA -->
+    <section class="fans">
+    
+      <h2>🎉 A Emoção da Torcida</h2>
+    
+      <p>
+        A Copa do Mundo reúne milhões de fãs apaixonados ao redor do planeta,
+        criando momentos inesquecíveis dentro e fora dos estádios.
+      </p>
+    
     </section>
 
     <footer>
